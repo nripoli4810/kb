@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Security Now · GitBook</title>
+        <title>Git · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="bash.html" />
     
-    <link rel="prev" href="../electrical/readme.html" />
+    
+    <link rel="prev" href="random.html" />
     
 
     </head>
@@ -127,9 +129,9 @@
         
         
     
-        <li class="chapter active" data-level="3.1" data-path="readme.html">
+        <li class="chapter " data-level="3.1" data-path="../securityNow/readme.html">
             
-                <a href="readme.html">
+                <a href="../securityNow/readme.html">
             
                     
                     Security Now
@@ -161,9 +163,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1.1" data-path="../tips/random.html">
+        <li class="chapter " data-level="4.1.1" data-path="random.html">
             
-                <a href="../tips/random.html">
+                <a href="random.html">
             
                     
                     Random
@@ -174,9 +176,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.2" data-path="../tips/git.html">
+        <li class="chapter active" data-level="4.1.2" data-path="git.html">
             
-                <a href="../tips/git.html">
+                <a href="git.html">
             
                     
                     Git
@@ -187,9 +189,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.3" data-path="../tips/bash.html">
+        <li class="chapter " data-level="4.1.3" data-path="bash.html">
             
-                <a href="../tips/bash.html">
+                <a href="bash.html">
             
                     
                     Bash
@@ -287,7 +289,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Security Now</a>
+        <a href=".." >Git</a>
     </h1>
 </div>
 
@@ -302,10 +304,84 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="security-now">Security Now</h1>
-<p>This is a collection of my notes from Security Now, a podcast by Steve Gibson of grc.com and  TWiT&apos;s Leo Laporte. It mostly includes recommendations for securing one&apos;s computer and interesting articles.</p>
-<p><a href="https://twit.tv/shows/security-now" target="_blank">https://twit.tv/shows/security-now</a>
-<a href="https://www.grc.com" target="_blank">https://www.grc.com</a></p>
+                                <h1 id="git-tips">Git Tips</h1>
+<p>A collection of various git tips and tricks.</p>
+<h2 id="learning-git">Learning Git</h2>
+<p>Start with this website / game. It will introduce you to git.</p>
+<p><a href="https://learngitbranching.js.org" target="_blank">https://learngitbranching.js.org</a></p>
+<p>And then use the following for more information:</p>
+<p><a href="https://try.github.io/levels/1/challenges/1" target="_blank">https://try.github.io/levels/1/challenges/1</a>
+<a href="https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/" target="_blank">https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/</a></p>
+<h2 id="git-clients">Git Clients</h2>
+<p>Windows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">GUI Clients</th>
+<th style="text-align:center">Bash Clients</th>
+<th style="text-align:center">Diff Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Sourcetree</td>
+<td style="text-align:center">GitBash for Windows</td>
+<td style="text-align:center">BeyoundCompare (Licensed!)</td>
+</tr>
+<tr>
+<td style="text-align:center">GitKraken (Licensed!)</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>Mac:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">GUI Clients</th>
+<th style="text-align:center">Bash Clients</th>
+<th style="text-align:center">Diff Tools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Sourcetree for Mac</td>
+<td style="text-align:center">Terminal</td>
+<td style="text-align:center">BeyoundCompare (Licensed!)</td>
+</tr>
+<tr>
+<td style="text-align:center">Gitkraken (Licensed!)</td>
+<td style="text-align:center">iTerm+ZSH</td>
+<td style="text-align:center">Xcode FileMerge</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aliases">Aliases</h2>
+<p>I have a list of general shortcuts that I use every day. Feel free to pick and choose which ones you want. To add these to your terminal, find your profile and add the alias/command as such: <code>alias key=&quot;command to run&quot;</code></p>
+<p>On Windows and Mac, you find these profile files in your home directory:</p>
+<ul>
+<li>Bash: <code>.bash_profile</code></li>
+<li>zsh: <code>.zshrc</code></li>
+</ul>
+<p>Here is a <a href="https://github.com/nripoli4810/bashconfig" target="_blank">link to all of my shortcuts</a></p>
+<p>Here are several of my favorites:</p>
+<h3 id="pretty-git-log">Pretty Git Log</h3>
+<p>The <code>git log</code> command is only somewhat useful. Here are two additional log graph aliases that will help you understand the state of your local repository.</p>
+<h3 id="lg1">lg1</h3>
+<p>This log graph command shows you your commit graph with the hash, date, and author, as well as all branches.</p>
+<p><code>alias lg1=&quot;git log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&apos; --all&quot;</code></p>
+<h3 id="lg2">lg2</h3>
+<p>This log graph command does the same as the above log command, but separates the commit message and author by putting them on their own line.</p>
+<p><code>alias lg2=&quot;git log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&apos;&apos;          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)&apos; --all&quot;</code></p>
+<hr>
+<h2 id="tips--tricks">Tips &amp; Tricks</h2>
+<p>Feel free to open a PR with suggestions for tips!</p>
+<h3 id="change-the-author-of-the-last-commit">Change the author of the last commit</h3>
+<p>Run: <code>git commit --amend --reset-author</code></p>
+<p>This will bring up a vim session and allow you to change the commit text if you want. When you&apos;re ready, quit vim (<code>:wq</code>) and force push your branch.</p>
+<h3 id="show-only-the-files-changed">Show only the files changed</h3>
+<p>Run: <code>git status -s</code></p>
+<p>This will show you a list of the files changed. (Hint: alias to <code>gss</code>)</p>
 
                                 
                                 </section>
@@ -333,10 +409,14 @@
 
             
                 
-                <a href="../electrical/readme.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Electrical Hints">
+                <a href="random.html" class="navigation navigation-prev " aria-label="Previous page: Random">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="bash.html" class="navigation navigation-next " aria-label="Next page: Bash">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -345,7 +425,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security Now","level":"3.1","depth":1,"next":{"title":"Tips","level":"4.1","depth":1,"ref":"","articles":[{"title":"Random","level":"4.1.1","depth":2,"path":"tips/random.md","ref":"tips/random.md","articles":[]},{"title":"Git","level":"4.1.2","depth":2,"path":"tips/git.md","ref":"tips/git.md","articles":[]},{"title":"Bash","level":"4.1.3","depth":2,"path":"tips/bash.md","ref":"tips/bash.md","articles":[]}]},"previous":{"title":"Electrical Hints","level":"2.1","depth":1,"path":"electrical/readme.md","ref":"electrical/readme.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"securityNow/readme.md","mtime":"2018-03-05T17:25:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-08T17:23:06.262Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"4.1.2","depth":2,"next":{"title":"Bash","level":"4.1.3","depth":2,"path":"tips/bash.md","ref":"tips/bash.md","articles":[]},"previous":{"title":"Random","level":"4.1.1","depth":2,"path":"tips/random.md","ref":"tips/random.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tips/git.md","mtime":"2018-03-08T17:22:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-08T17:23:06.262Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
