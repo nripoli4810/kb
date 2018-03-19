@@ -22,3 +22,6 @@
 * Provisioning
   * [Mac](provisioning/mac.md)
   * [Windows](provisioning/windows.md)
+
+* [Self Improvement](selfImprovement/readme.md)
+  * [Reading List](selfImprovement/booksToReadme.md)
