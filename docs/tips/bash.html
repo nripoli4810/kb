@@ -217,6 +217,39 @@
                 <span>
             
                     
+                    Development
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../development/ios.html">
+            
+                <a href="../development/ios.html">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
                     Provisioning
             
                 </span>
@@ -226,7 +259,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.1" data-path="../provisioning/mac.html">
+        <li class="chapter " data-level="6.1.1" data-path="../provisioning/mac.html">
             
                 <a href="../provisioning/mac.html">
             
@@ -239,12 +272,44 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.2" data-path="../provisioning/windows.html">
+        <li class="chapter " data-level="6.1.2" data-path="../provisioning/windows.html">
             
                 <a href="../provisioning/windows.html">
             
                     
                     Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../selfImprovement/readme.html">
+            
+                <a href="../selfImprovement/readme.html">
+            
+                    
+                    Self Improvement
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="../selfImprovement/booksToReadme.md">
+            
+                <span>
+            
+                    
+                    Reading List
             
                 </a>
             
@@ -312,7 +377,20 @@
 <h2 id="passing-more-than-9-arguments-to-a-script">Passing more than 9 arguments to a script</h2>
 <p>If you&apos;re passing more than 9 arguments, then you might want to reconsider what your script is actually doing.</p>
 <p>But, if not...</p>
-<p>// TODO</p>
+<pre><code class="lang-bash"><span class="hljs-keyword">while</span> [ <span class="hljs-variable">$#</span> -ge 1 ]; <span class="hljs-keyword">do</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-variable">$1</span> <span class="hljs-keyword">in</span>
+        <span class="hljs-_">-a</span>|--argA)  LOCAL_VAR_A=<span class="hljs-string">&quot;<span class="hljs-variable">$2</span>&quot;</span>; <span class="hljs-built_in">shift</span> ;;          <span class="hljs-comment"># DESCRIPTION OF VAR A</span>
+        -b|--argB)  LOCAL_VAR_B=<span class="hljs-string">&quot;<span class="hljs-variable">$2</span>&quot;</span>; <span class="hljs-built_in">shift</span> ;;          <span class="hljs-comment"># DESCRIPTION OF VAR B</span>
+        -*)         <span class="hljs-built_in">echo</span> Unknown option\: <span class="hljs-variable">$1</span> &gt;&amp;2; ;;    <span class="hljs-comment">#</span>
+    <span class="hljs-keyword">esac</span>
+    <span class="hljs-built_in">shift</span>
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p>Some thoughts about this approach:</p>
+<ul>
+<li>You should decide what happens when you have an unknown parameter. Your two options are to ignore the parameter or exit immediately. My approach has been to exit immediately.</li>
+<li>You should check the number of parameters coming into the script before this while statement. If it is one or less, output a list of the possible arguments to your script to help the end user. Remember that end user might not be you one day (or it could be you two years from now!).</li>
+</ul>
 
                                 
                                 </section>
@@ -352,7 +430,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bash","level":"4.1.3","depth":2,"next":{"title":"Provisioning","level":"5.1","depth":1,"ref":"","articles":[{"title":"Mac","level":"5.1.1","depth":2,"path":"provisioning/mac.md","ref":"provisioning/mac.md","articles":[]},{"title":"Windows","level":"5.1.2","depth":2,"path":"provisioning/windows.md","ref":"provisioning/windows.md","articles":[]}]},"previous":{"title":"Git","level":"4.1.2","depth":2,"path":"tips/git.md","ref":"tips/git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tips/bash.md","mtime":"2018-03-08T17:22:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-08T17:23:06.262Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bash","level":"4.1.3","depth":2,"next":{"title":"Development","level":"5.1","depth":1,"ref":"","articles":[]},"previous":{"title":"Git","level":"4.1.2","depth":2,"path":"tips/git.md","ref":"tips/git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tips/bash.md","mtime":"2018-06-15T12:44:54.389Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-15T12:50:48.585Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
