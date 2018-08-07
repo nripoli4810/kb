@@ -10,8 +10,8 @@ https://learngitbranching.js.org
 
 And then use the following for more information:
 
-https://try.github.io/levels/1/challenges/1
-https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/
+* https://try.github.io/levels/1/challenges/1
+* https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/
 
 ## Git Clients
 
