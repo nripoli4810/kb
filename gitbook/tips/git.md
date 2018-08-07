@@ -52,11 +52,15 @@ This log graph command shows you your commit graph with the hash, date, and auth
 
 `alias lg1="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"`
 
+![lg1](../assets/lg1.png "lg1")
+
 ### lg2
 
 This log graph command does the same as the above log command, but separates the commit message and author by putting them on their own line.
 
 `alias lg2="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"`
+
+![lg2](../assets/lg2.png "lg2")
 
 ----
 
@@ -75,3 +79,9 @@ This will bring up a vim session and allow you to change the commit text if you 
 Run: `git status -s`
 
 This will show you a list of the files changed. (Hint: alias to `gss`)
+
+### Display / Edit Current Author
+
+To display the currently configured author / email: `git config user.name` or `git config user.email`
+
+To set the current author / email, add the name you want to set in quotes after the above, like `git config user.name "Test User"`.
