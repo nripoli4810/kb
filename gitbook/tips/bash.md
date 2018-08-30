@@ -1,5 +1,7 @@
 # Bash Tips & Tricks
 
+Learn Bash [via The Bash Academy](https://www.bash.academy/)
+
 ## Check if a file exists
 
 If you want to check if a file does not exist, insert a `!` in front of the -f.

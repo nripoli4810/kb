@@ -8,7 +8,8 @@
 
 ----
 
-* [Security Now](securityNow/readme.md)
+* [Podcasts](podcasts/theList.md)
+* [Security Now](podcasts/securityNow.md)
 
 ----
 
@@ -16,6 +17,7 @@
   * [Random](tips/random.md)
   * [Git](tips/git.md)
   * [Bash](tips/bash.md)
+  * [VIM](tips/vim.md)
 
 ----
 

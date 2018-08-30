@@ -6,12 +6,13 @@ A collection of various git tips and tricks.
 
 Start with this website / game. It will introduce you to git.
 
-https://learngitbranching.js.org
+[Learn Git Branching](https://learngitbranching.js.org)
 
 And then use the following for more information:
 
-* https://try.github.io/levels/1/challenges/1
-* https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/
+* [GitHub Git Challenges](https://try.github.io/levels/1/challenges/1)
+* [8 Tips to Help You Work Better with Git](https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/)
+* [A Hacker's Guide to Git](https://wildlyinaccurate.com/a-hackers-guide-to-git/)
 
 ## Git Clients
 
@@ -19,14 +20,14 @@ Windows:
 
 | GUI Clients | Bash Clients | Diff Tools |
 | :---: | :---: | :---: |
-| Sourcetree | GitBash for Windows | BeyoundCompare (Licensed!)|
+| Sourcetree | GitBash for Windows | BeyondCompare (Licensed!)|
 | GitKraken (Licensed!) | | |
 
 Mac:
 
 | GUI Clients | Bash Clients | Diff Tools |
 | :---: | :---: | :---: |
-| Sourcetree for Mac | Terminal | BeyoundCompare (Licensed!) |
+| Sourcetree for Mac | Terminal | BeyondCompare (Licensed!) |
 | Gitkraken (Licensed!) | iTerm+ZSH | Xcode FileMerge |
 
 ## Aliases
