@@ -8,8 +8,9 @@
 
 ----
 
-* [Podcasts](podcasts/theList.md)
-* [Security Now](podcasts/securityNow.md)
+* Podcasts
+  * [Podcasts](podcasts/theList.md)
+  * [Security Now](podcasts/securityNow.md)
 
 ----
 

@@ -2,10 +2,6 @@
 
 Welcome to my documentation! Here in lies tidbits of information that I use as reference materials.
 
-## See this documentation in action!
-
-This documentation is in the GitBook format. Go visit the [rendered site](https://nripoli4810.github.io/kb)!
-
 ## Other Interesting Links
 
 Interested in cooking? When people ask for a recipe, it's almost always a tried and true recipe from my family. Check it out, and feel free to add!

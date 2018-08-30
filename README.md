@@ -14,6 +14,10 @@ Run the following commands from the root of the repository.
 
     `gitbook build ./gitbook ./output`
 
+## See this documentation in action!
+
+This documentation is in the GitBook format. Go visit the [rendered site](https://nripoli4810.github.io/kb)!
+
 ## Contribution Guide
 
 Please submit a Pull Request to add a new article.
