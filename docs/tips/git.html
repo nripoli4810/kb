@@ -129,9 +129,36 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../securityNow/readme.html">
+        <li class="chapter " data-level="3.1" >
             
-                <a href="../securityNow/readme.html">
+                <span>
+            
+                    
+                    Podcasts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../podcasts/theList.html">
+            
+                <a href="../podcasts/theList.html">
+            
+                    
+                    Podcasts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../podcasts/securityNow.html">
+            
+                <a href="../podcasts/securityNow.html">
             
                     
                     Security Now
@@ -139,6 +166,11 @@
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -202,6 +234,19 @@
             
         </li>
     
+        <li class="chapter " data-level="4.1.4" data-path="vim.html">
+            
+                <a href="vim.html">
+            
+                    
+                    VIM
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -225,9 +270,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="5.2" data-path="../development/ios.html">
+        <li class="chapter " data-level="5.1.1" data-path="../development/ios.html">
             
                 <a href="../development/ios.html">
             
@@ -237,6 +283,11 @@
                 </a>
             
 
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -373,10 +424,13 @@
 <p>A collection of various git tips and tricks.</p>
 <h2 id="learning-git">Learning Git</h2>
 <p>Start with this website / game. It will introduce you to git.</p>
-<p><a href="https://learngitbranching.js.org" target="_blank">https://learngitbranching.js.org</a></p>
+<p><a href="https://learngitbranching.js.org" target="_blank">Learn Git Branching</a></p>
 <p>And then use the following for more information:</p>
-<p><a href="https://try.github.io/levels/1/challenges/1" target="_blank">https://try.github.io/levels/1/challenges/1</a>
-<a href="https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/" target="_blank">https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/</a></p>
+<ul>
+<li><a href="https://try.github.io/levels/1/challenges/1" target="_blank">GitHub Git Challenges</a></li>
+<li><a href="https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/" target="_blank">8 Tips to Help You Work Better with Git</a></li>
+<li><a href="https://wildlyinaccurate.com/a-hackers-guide-to-git/" target="_blank">A Hacker&apos;s Guide to Git</a></li>
+</ul>
 <h2 id="git-clients">Git Clients</h2>
 <p>Windows:</p>
 <table>
@@ -391,7 +445,7 @@
 <tr>
 <td style="text-align:center">Sourcetree</td>
 <td style="text-align:center">GitBash for Windows</td>
-<td style="text-align:center">BeyoundCompare (Licensed!)</td>
+<td style="text-align:center">BeyondCompare (Licensed!)</td>
 </tr>
 <tr>
 <td style="text-align:center">GitKraken (Licensed!)</td>
@@ -412,7 +466,7 @@
 <tr>
 <td style="text-align:center">Sourcetree for Mac</td>
 <td style="text-align:center">Terminal</td>
-<td style="text-align:center">BeyoundCompare (Licensed!)</td>
+<td style="text-align:center">BeyondCompare (Licensed!)</td>
 </tr>
 <tr>
 <td style="text-align:center">Gitkraken (Licensed!)</td>
@@ -435,9 +489,11 @@
 <h3 id="lg1">lg1</h3>
 <p>This log graph command shows you your commit graph with the hash, date, and author, as well as all branches.</p>
 <p><code>alias lg1=&quot;git log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&apos; --all&quot;</code></p>
+<p><img src="../assets/lg1.png" alt="lg1" title="lg1"></p>
 <h3 id="lg2">lg2</h3>
 <p>This log graph command does the same as the above log command, but separates the commit message and author by putting them on their own line.</p>
 <p><code>alias lg2=&quot;git log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&apos;&apos;          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)&apos; --all&quot;</code></p>
+<p><img src="../assets/lg2.png" alt="lg2" title="lg2"></p>
 <hr>
 <h2 id="tips--tricks">Tips &amp; Tricks</h2>
 <p>Feel free to open a PR with suggestions for tips!</p>
@@ -447,6 +503,9 @@
 <h3 id="show-only-the-files-changed">Show only the files changed</h3>
 <p>Run: <code>git status -s</code></p>
 <p>This will show you a list of the files changed. (Hint: alias to <code>gss</code>)</p>
+<h3 id="display--edit-current-author">Display / Edit Current Author</h3>
+<p>To display the currently configured author / email: <code>git config user.name</code> or <code>git config user.email</code></p>
+<p>To set the current author / email, add the name you want to set in quotes after the above, like <code>git config user.name &quot;Test User&quot;</code>.</p>
 
                                 
                                 </section>
@@ -490,7 +549,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git","level":"4.1.2","depth":2,"next":{"title":"Bash","level":"4.1.3","depth":2,"path":"tips/bash.md","ref":"tips/bash.md","articles":[]},"previous":{"title":"Random","level":"4.1.1","depth":2,"path":"tips/random.md","ref":"tips/random.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tips/git.md","mtime":"2018-03-08T17:22:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-15T12:50:48.585Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git","level":"4.1.2","depth":2,"next":{"title":"Bash","level":"4.1.3","depth":2,"path":"tips/bash.md","ref":"tips/bash.md","articles":[]},"previous":{"title":"Random","level":"4.1.1","depth":2,"path":"tips/random.md","ref":"tips/random.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tips/git.md","mtime":"2018-08-30T13:04:17.204Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-30T13:13:21.966Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
