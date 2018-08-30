@@ -1,6 +1,7 @@
 # VIM
 
 My favorite [cheat sheet](https://vim.rtorr.com)
+
 [Learn VIM](https://www.openvim.com/tutorial.html)
 
 ## VIM: Number Keys do not enter their corresponding characters
